@@ -22,6 +22,7 @@ def twilMsg(channel):
      )
 
    print(message.sid)
+   GPIO.output(23,GPIO.HIGH)
 
 GPIO.add_event_detect(18, GPIO.FALLING, callback = twilMsg, bouncetime = 2000)
 
