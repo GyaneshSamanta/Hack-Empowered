@@ -1,13 +1,18 @@
 # Wheelie 🦽
 Did you think a fractured leg would stop us from hacking?
+![Image](repository-assets/2.png)
 
 ## Inspiration💡
 One of our developers got into an accident, fracturing their right leg, and has been advised to be on complete bed rest. They need assistance with moving around on a wheelchair and it's somewhat inconvenient to scream for help (really) and it's definitely a hassle when no one's around and they can't find their phone, so we decided to solve the problem using a Raspberry Pi Zero board laying around. With the push of a button now, they can reach out to their caretaker and ask them for help.
 
 Plus, a broken bone can't stop us from hacking, so we hacked the problem. 🤷
 
+![Image](repository-assets/1.jpg)
+
 ## What it does 🧭
 Wheelie consists of an RPi-based apparatus that sends a message to the caretaker(s) with a click of a button. The project harnesses the capabilities of the Twilio Console to interact with the hardware and send notifications effortlessly without having the user pick up their phone.
+
+![Image](repository-assets/4.PNG)
 
 ## How we built it 🔧
 We used a Raspberry Pi Zero W board connected to a breadboard with a push-down button to create the hardware end of Wheelie. The Twilio credentials are hardcoded onto the Pi in the `raspberry-pi-code.py` file and `twilMsg` function is executed whenever the button on the apparatus is clicked, sending out notifications right away.
@@ -15,6 +20,8 @@ We used a Raspberry Pi Zero W board connected to a breadboard with a push-down b
 ## Challenges we ran into 🏃‍♂️
  1. Designing the hardware in a way that it's comfortable to attach to the wheelchair without creating a hassle for the user.
  2. Avoiding latency in sending out notifications through Twilio (remains unresolved as the dependency is on Twilio).
+
+![Image](repository-assets/6.jpg)
 
 ## Accomplishments that we're proud of 🏅
  1. The setup can be powered by a small power bank using just a USB Cable.
@@ -25,6 +32,8 @@ We used a Raspberry Pi Zero W board connected to a breadboard with a push-down b
 ## What we learned 🧠
  1. Integrating Twilio with Pi.
  2. Setting up headless Raspberry Pi Zero.
+
+![Image](repository-assets/5.jpg)
 
 ## What's next for Wheelie ⏭
 We did come up with a bunch of future iterations for our project, namely:
