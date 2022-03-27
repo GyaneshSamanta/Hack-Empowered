@@ -1,6 +1,6 @@
 # Wheelie 🦽
 Did you think a fractured leg would stop us from hacking?
-![Image](repository-assets/2.png)
+![Image](repository-assets/3.png)
 
 ## Inspiration💡
 One of our developers got into an accident, fracturing their right leg, and has been advised to be on complete bed rest. They need assistance with moving around on a wheelchair and it's somewhat inconvenient to scream for help (really) and it's definitely a hassle when no one's around and they can't find their phone, so we decided to solve the problem using a Raspberry Pi Zero board laying around. With the push of a button now, they can reach out to their caretaker and ask them for help.
@@ -16,6 +16,8 @@ Wheelie consists of an RPi-based apparatus that sends a message to the caretaker
 
 ## How we built it 🔧
 We used a Raspberry Pi Zero W board connected to a breadboard with a push-down button to create the hardware end of Wheelie. The Twilio credentials are hardcoded onto the Pi in the `raspberry-pi-code.py` file and `twilMsg` function is executed whenever the button on the apparatus is clicked, sending out notifications right away.
+
+Even if Wheelie is disconnected from power, it starts the script on its own whenever the Raspberry Pi Zero boots up again eliminating the need to connect it to a laptop to initiate the script every single time.
 
 ## Challenges we ran into 🏃‍♂️
  1. Designing the hardware in a way that it's comfortable to attach to the wheelchair without creating a hassle for the user.
