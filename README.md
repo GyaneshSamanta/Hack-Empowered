@@ -1,6 +1,7 @@
 # Wheelie 🦽
 Did you think a fractured leg would stop us from hacking?
-![Image](repository-assets/3.png)
+
+![Image](repository-assets/3.PNG)
 
 ## Inspiration💡
 One of our developers got into an accident, fracturing their right leg, and has been advised to be on complete bed rest. They need assistance with moving around on a wheelchair and it's somewhat inconvenient to scream for help (really) and it's definitely a hassle when no one's around and they can't find their phone, so we decided to solve the problem using a Raspberry Pi Zero board laying around. With the push of a button now, they can reach out to their caretaker and ask them for help.
