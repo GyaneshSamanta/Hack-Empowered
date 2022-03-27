@@ -5,11 +5,15 @@ import time
 # Raspberry Pi Pins Setup
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.IN, pull_up_down = GPIO.PUD_UP)
+GPIO.setwarnings(False)
+GPIO.setup(23, GPIO.OUT)
 
 # Twilio Account Setup
 account_sid = 'AC74c73ff901fe41d63e0362f72b626798'
 auth_token = '4be8c3a8454c8294040514f876ff4c1b'
 client = Client(account_sid, auth_token)
+
+GPIO.output(23, GPIO.LOW)
 
 # Twilio Function
 def twilMsg(channel): 
@@ -23,6 +27,8 @@ def twilMsg(channel):
 
    print(message.sid)
    GPIO.output(23,GPIO.HIGH)
+   time.sleep(2)
+   GPIO.output(23, GPIO.LOW)
 
 GPIO.add_event_detect(18, GPIO.FALLING, callback = twilMsg, bouncetime = 2000)
 

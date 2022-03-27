@@ -1,4 +1,6 @@
 # Wheelie 🦽
+Did you think a fractured leg would stop us from hacking?
+
 ## Inspiration💡
 One of our developers got into an accident, fracturing their right leg, and has been advised to be on complete bed rest. They need assistance with moving around on a wheelchair and it's somewhat inconvenient to scream for help (really) and it's definitely a hassle when no one's around and they can't find their phone, so we decided to solve the problem using a Raspberry Pi Zero board laying around. With the push of a button now, they can reach out to their caretaker and ask them for help.
 
@@ -18,6 +20,7 @@ We used a Raspberry Pi Zero W board connected to a breadboard with a push-down b
  1. The setup can be powered by a small power bank using just a USB Cable.
  2. It's super easy to create and attach a Wheelie on your own so folks who are facing similar issues can use it too. We've included all the necessary setup instructions over our GitHub Repository.
  3. Even if it's disconnected from power, it loads the required Python file as soon as power's back, without having to connect the apparatus to a computer again and restarting the application.
+ 4. sThe total cost of the apparatus is less than $10!
 
 ## What we learned 🧠
  1. Integrating Twilio with Pi.
